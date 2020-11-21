@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Millad Dagdoni</title>
-<link rel="stylesheet" href="./style.css" type="text/css">
-	</head>
-	<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script src="./build/matter.min.js"></script>
+    <title>Millad Dagdoni - Software Engineering</title>
+    <style>
+      *{background-color: rgb(15, 15, 19)}
+      canvas{
+          margin:0 auto;
+        }
+        #app{
+            width:800px;
+            height:600px;
+            margin: 3em auto;
+        }
+        .fade-in {
+animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
 
-<div class="main-wrapper">
-<a href="mailto:millad@dagdoni.com"><h4>Millad Dagdoni</h4></a>
-<p>Programmer & Software Architect</p>
-<a href="https://twitter.com/MilladDagdoni">Twitter</a> | 
-<a href="https://github.com/Millad">Github</a>
-</div>
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
 
-	</body>
-</html> 
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+</style>
+  </head>
+  <body>
+    <div id="app" class="fade-in"></div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
