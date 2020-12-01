@@ -31,13 +31,9 @@
   Runner.run(runner, engine);
 
   // add bodies
-  var cradle = Composites.newtonsCradle(280, 100, 5, 30, 200);
+  cradle = Composites.newtonsCradle(280, 100, 7, 20, 140);
   World.add(world, cradle);
-  Body.translate(cradle.bodies[0], { x: -180, y: -100 });
-
-  cradle = Composites.newtonsCradle(280, 380, 7, 20, 140);
-  World.add(world, cradle);
-  Body.translate(cradle.bodies[0], { x: -140, y: -100 });
+  Body.translate(cradle.bodies[0], { x: -100, y: 100 });
 
   // add mouse control
   var mouse = Mouse.create(render.canvas),
