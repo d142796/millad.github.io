@@ -14,6 +14,7 @@
     <style>
       a{ color: silver; font-size: 2em;  right:100px;  }
       h1{font-size: 4em; margin-top:0em;}
+
       body{background-color: black; color: white; font-family:  Helvetica;  overflow: hidden; }
        .main{ width: 400px; padding: 2em; }
        .main h1, .main p{ margin-bottom: 0;}
@@ -26,8 +27,11 @@
           position: relative;
         animation: fadeIn ease 1s;
   }
+
+
 @keyframes fadeIn { 
-0% {opacity:0; left:100px; }
+0% {opacity:0; left:200px;  }
+60% {opacity:0.3; left:20px; transform: scale(1.2); }
 100% {opacity:1; left:0px;}
 }
 
