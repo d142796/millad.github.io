@@ -35,9 +35,7 @@
         overflow: hidden;
         transition: background-color 29s ease-in;
       }
-      body:hover {
-        background-color: red;
-      }
+
       .main {
         width: 400px;
         padding: 2em;
@@ -67,7 +65,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="fadeInCorrectBgColor()">
     <div class="main">
       <h1 class="fade-in">Millad Dagdoni</h1>
     </div>
@@ -75,10 +73,18 @@
     <script type="text/javascript">
       const hours = new Date().getHours();
       const isDarkmodeTime = hours >= 15 || hours <= 8;
-      const body = document.getElementsByTagName("body")[0];
-      const title = document.getElementsByTagName("h1")[0];
-      title.style.color = isDarkmodeTime ? "white" : "black";
-      body.style.backgroundColor = isDarkmodeTime ? "black" : "white";
+
+      function fadeInCorrectBgColor() {
+        document.body.setAttribute(
+          "style",
+          "color: " +
+            (isDarkmodeTime ? "white" : "black") +
+            "; " +
+            "background-color: " +
+            (isDarkmodeTime ? "black" : "white") +
+            "; transition: background-color 3s ease-in;"
+        );
+      }
     </script>
   </body>
 </html>
